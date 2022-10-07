@@ -1,0 +1,19 @@
+@import '../variables';
+
+/**************/
+/* Typography */
+/**************/
+
+// letter-spacing
+.ls-sm {
+  letter-spacing: -0.05em !important;
+}
+.ls-0 {
+  letter-spacing: 0 !important;
+}
+.ls-lg {
+  letter-spacing: 0.05em !important;
+}
+.ls-inherit {
+  letter-spacing: inherit !important;
+}

@@ -1,0 +1,17 @@
+$primary: green !default;
+$danger: orange !default;
+
+
+$theme-colors: (
+  "primary": $primary,
+  "danger": $danger
+);
+
+// Create your own map
+$custom-colors: (
+  "custom": #900
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
