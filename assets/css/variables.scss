@@ -1,17 +1,88 @@
-$primary: green !default;
-$danger: orange !default;
+// Required
+@import "~bootstrap/scss/functions";
 
-
-$theme-colors: (
-  "primary": $primary,
-  "danger": $danger
-);
+// Default variable overrides
+// $primary: green;
+// $danger: orange;
 
 // Create your own map
-$custom-colors: (
+/*$custom-colors: (
+  "primary": green,
+  "danger": orange,
   "custom": #900
-);
+);*/
+
+// Required
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/maps";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/utilities";
+
+
 
 // Merge the maps
-$theme-colors: map-merge($theme-colors, $custom-colors);
+/*$utilities: map-merge(
+    $utilities,
+    (
+      "color": map-merge(
+          map-get($utilities, "color"),
+          (
+            values: map-merge(
+                map-get(map-get($utilities, "color"), "values"),
+                  (
+                    $custom-colors
+                  ),
+            ),
+          ),
+      ),
+    )
+);*/
 
+$utilities: (
+  "text-opacity": (
+    css-var: true,
+    class: text-opacity,
+    values: (
+      light: .1,
+      25: .25,
+      50: .5,
+      65: .65,
+      75: .75,
+      dark: .95,
+      100: 1
+    )
+  ),
+  "bg-opacity": (
+    css-var: true,
+    class: bg-opacity,
+    values: (
+      10: .1,
+      lighter: .15,
+      25: .25,
+      light: .35,
+      50: .5,
+      75: .75,
+      dark: .85,
+      100: 1,
+    )
+  ),
+);
+
+// Optional Bootstrap components here
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+
+$primary-light-1: mix($white, $primary, 10%) !default; /* 53a8ff */
+$primary-light-2: mix($white, $primary, 20%) !default; /* 66b1ff */
+$primary-light-3: mix($white, $primary, 30%) !default; /* 79bbff */
+$primary-light-4: mix($white, $primary, 40%) !default; /* 8cc5ff */
+$primary-light-5: mix($white, $primary, 50%) !default; /* a0cfff */
+$primary-light-6: mix($white, $primary, 60%) !default; /* b3d8ff */
+$primary-light-7: mix($white, $primary, 70%) !default; /* c6e2ff */
+$primary-light-8: mix($white, $primary, 80%) !default; /* d9ecff */
+$primary-light-9: mix($white, $primary, 90%) !default; /* ecf5ff */
+
+
+
+@import "~bootstrap/scss/utilities/api";

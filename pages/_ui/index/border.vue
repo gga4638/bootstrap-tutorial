@@ -35,45 +35,91 @@
       <small class="fs-4 ml-3 ls-0 text-placeholder"><code>.border</code> required</small>
     </h2>
     <div>
-      <div class="row gap-4">
-        <div class="col-2 p-2 border border-primary">.border-primary</div>
-        <div class="col-2 p-2 border border-primary border-opacity-75">.border-primary</div>
-        <div class="col-2 p-2 border border-primary border-opacity-50">.border-primary</div>
-        <div class="col-2 p-2 border border-primary border-opacity-25">.border-primary</div>
-        <div class="col-2 p-2 border border-primary border-opacity-10">.border-primary</div>
-        <div class="col-2 p-2 border border-secondary">.border-secondary</div>
-        <div class="col-2 p-2 border border-success">.border-success</div>
-        <div class="col-2 p-2 border border-info">.border-info</div>
-        <div class="col-2 p-2 border border-warning">.border-warning</div>
-        <div class="col-2 p-2 border border-danger">.border-danger</div>
-        <div class="col-2 p-2 border border-light">.border-light</div>
+      <div class="row gap-4 mb-3">
         <div class="col-2 p-2 border border-dark">.border-dark</div>
-        <div class="col-2 p-2 bg-black">
-          <div class="px-3 border border-white text-white">.border-white</div>
-        </div>
+        <div class="col-2 p-2 border border-white">.border-white</div>
+      </div>
+      <div class="row gap-4 mb-3">
+        <div class="col p-2 border border-primary">.border-primary</div>
+        <div class="col p-2 border border-primary border-opacity-75">.border-opacity-75</div>
+        <div class="col p-2 border border-primary border-opacity-50">.border-opacity-50</div>
+        <div class="col p-2 border border-primary border-opacity-25">.border-opacity-25</div>
+        <div class="col p-2 border border-primary border-opacity-10">.border-opacity-10</div>
+      </div>
+      <div class="row gap-4 mb-3">
+        <div class="col p-2 border border-success">.border-success</div>
+        <div class="col p-2 border border-success border-opacity-75">.border-opacity-75</div>
+        <div class="col p-2 border border-success border-opacity-50">.border-opacity-50</div>
+        <div class="col p-2 border border-success border-opacity-25">.border-opacity-25</div>
+        <div class="col p-2 border border-success border-opacity-10">.border-opacity-10</div>
+      </div>
+      <div class="row gap-4 mb-3">
+        <div class="col p-2 border border-warning">.border-warning</div>
+        <div class="col p-2 border border-warning border-opacity-75">.border-opacity-75</div>
+        <div class="col p-2 border border-warning border-opacity-50">.border-opacity-50</div>
+        <div class="col p-2 border border-warning border-opacity-25">.border-opacity-25</div>
+        <div class="col p-2 border border-warning border-opacity-10">.border-opacity-10</div>
+      </div>
+      <div class="row gap-4 mb-3">
+        <div class="col p-2 border border-danger">.border-danger</div>
+        <div class="col p-2 border border-danger border-opacity-75">.border-opacity-75</div>
+        <div class="col p-2 border border-danger border-opacity-50">.border-opacity-50</div>
+        <div class="col p-2 border border-danger border-opacity-25">.border-opacity-25</div>
+        <div class="col p-2 border border-danger border-opacity-10">.border-opacity-10</div>
+      </div>
+      <div class="row gap-4 mb-3">
+        <div class="col p-2 border border-info">.border-info</div>
+        <div class="col p-2 border border-info border-opacity-75">.border-opacity-75</div>
+        <div class="col p-2 border border-info border-opacity-50">.border-opacity-50</div>
+        <div class="col p-2 border border-info border-opacity-25">.border-opacity-25</div>
+        <div class="col p-2 border border-info border-opacity-10">.border-opacity-10</div>
+      </div>
+      <div class="row gap-4 mb-3">
+        <div class="col p-2 border border-secondary">.border-secondary</div>
+        <div class="col p-2 border border-secondary border-opacity-75">.border-opacity-75</div>
+        <div class="col p-2 border border-secondary border-opacity-50">.border-opacity-50</div>
+        <div class="col p-2 border border-secondary border-opacity-25">.border-opacity-25</div>
+        <div class="col p-2 border border-secondary border-opacity-10">.border-opacity-10</div>
       </div>
     </div>
     <!-- -->
     <hr class="my-5" />
     <!-- -->
-    <h2>Border Radius</h2>
-    <el-row :gutter="10">
-      <el-col :span="5">
-        <div class="bg-light p-3 radius-sm">.radius-sm</div>
-      </el-col>
-      <el-col :span="5">
-        <div class="bg-light p-3 radius">.radius</div>
-      </el-col>
-      <el-col :span="5">
-        <div class="bg-light p-3 radius-lg">.radius-lg</div>
-      </el-col>
-      <el-col :span="5">
-        <div class="bg-light p-3 radius-pill">.radius-pill</div>
-      </el-col>
-      <el-col :span="4">
-        <div class="bg-light p-3 radius-circle">.radius-circle</div>
-      </el-col>
-    </el-row>
+    <h2>Radius</h2>
+    <div class="row gap-4">
+      <div class="col bg-dark text-white p-3 rounded">.rounded</div>
+      <div class="col bg-dark text-white p-3 rounded-top">.rounded-top</div>
+      <div class="col bg-dark text-white p-3 rounded-end">.rounded-end</div>
+      <div class="col bg-dark text-white p-3 rounded-bottom">.rounded-bottom</div>
+      <div class="col bg-dark text-white p-3 rounded-start">.rounded-start</div>
+      <div class="col bg-dark text-white p-3 rounded-circle">.rounded-circle</div>
+      <div class="col bg-dark text-white p-3 rounded-pill">.rounded-pill</div>
+    </div>
+    <br/>
+    <br/>
+    <h2>Radius Sizes</h2>
+    <div class="row gap-4">
+      <div class="col bg-dark text-white p-3 rounded-0">.rounded-0</div>
+      <div class="col bg-dark text-white p-3 rounded-1">.rounded-1</div>
+      <div class="col bg-dark text-white p-3 rounded-2">.rounded-2</div>
+      <div class="col bg-dark text-white p-3 rounded-3">.rounded-3</div>
+      <div class="col bg-dark text-white p-3 rounded-4">.rounded-4</div>
+      <div class="col bg-dark text-white p-3 rounded-5">.rounded-5</div>
+    </div>
+    <hr class="my-5" />
+    <h2>ETC</h2>
+    <div>
+      <div class="mb-4">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control border-success" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="h4 pb-2 mb-4 text-danger border-bottom border-danger">
+        Dangerous heading
+      </div>
+      <div class="p-3 bg-info bg-opacity-10 border border-info border-start-0 rounded-end">
+        Changing border color and width
+      </div>
+    </div>
   </div>
 </template>
 

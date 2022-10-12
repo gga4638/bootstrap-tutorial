@@ -3,8 +3,16 @@
     <h2>Text Color</h2>
     <div>
       <p>
-        <code>.text-custom</code> -
-        <span class="text-custom">가나다라마바사아자차카타파하 ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz</span>
+        <code>.text-primary-dark</code> -
+        <span class="text-primary text-opacity-dark">가나다라마바사아자차카타파하 ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz</span>
+      </p>
+      <p>
+        <code>.text-primary-75</code> -
+        <span class="text-primary text-opacity-75">가나다라마바사아자차카타파하 ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz</span>
+      </p>
+      <p>
+        <code>.text-primary-65</code> -
+        <span class="text-primary text-opacity-65">가나다라마바사아자차카타파하 ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz</span>
       </p>
       <p>
         <code>.text-primary</code> -
@@ -63,6 +71,7 @@
     <h2>Background Color & Gradient</h2>
     <div class="container text-center">
       <div class="row mb-4">
+        <!--    gray-600-->
         <div class="col-3 p-5 text-black bg-white">.bg-white</div>
         <div class="col-3 p-5 text-black bg-light">.bg-light</div>
         <div class="col-3 p-5 bg-light bg-gradient">.bg-light <br/> .bg-gradient</div>
@@ -76,9 +85,12 @@
         <div class="col-3 p-5 text-white bg-primary bg-gradient">.bg-primary <br/> .bg-gradient</div>
       </div>
       <div class="row mb-4">
+        <div class="col-3 p-5 text-white bg-primary bg-opacity-dark">.bg-primary <br/> .bg-opacity-dark</div>
         <div class="col-3 p-5 text-white bg-primary bg-opacity-75">.bg-primary <br/> .bg-opacity-75</div>
         <div class="col-3 p-5 bg-primary bg-opacity-50">.bg-primary <br/> .bg-opacity-50</div>
+        <div class="col-3 p-5 bg-primary bg-opacity-light">.bg-primary <br/> .bg-opacity-light</div>
         <div class="col-3 p-5 bg-primary bg-opacity-25">.bg-primary <br/> .bg-opacity-25</div>
+        <div class="col-3 p-5 bg-primary bg-opacity-lighter">.bg-primary <br/> .bg-opacity-lighter</div>
         <div class="col-3 p-5 bg-primary bg-opacity-10">.bg-primary <br/> .bg-opacity-10</div>
       </div>
       <div class="row">
@@ -96,6 +108,7 @@
         <div class="col-3 p-5 text-white bg-success bg-gradient">.bg-success <br/> .bg-gradient</div>
       </div>
       <div class="row mb-4">
+        <div class="col-3 p-5 text-white bg-success bg-opacity-dark">.bg-success <br/> .bg-opacity-dark</div>
         <div class="col-3 p-5 text-white bg-success bg-opacity-75">.bg-success <br/> .bg-opacity-75</div>
         <div class="col-3 p-5 bg-success bg-opacity-50">.bg-success <br/> .bg-opacity-50</div>
         <div class="col-3 p-5 bg-success bg-opacity-25">.bg-success <br/> .bg-opacity-25</div>
